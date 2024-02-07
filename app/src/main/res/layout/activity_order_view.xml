@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1E7"
+    tools:context=".OrderViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints,scrollviewsize"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/order_details"
+            android:textColor="#6C332E"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/orderSummary"
+            android:layout_marginStart="30dp"
+            android:layout_width="320dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#BD6549"
+            android:gravity = "center_vertical" />
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:text="@string/payment"-->
+<!--        android:textSize="20sp"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="229dp"-->
+<!--        tools:layout_editor_absoluteY="535dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:backgroundTint="#E3724E"-->
+<!--        android:textColor="@color/black"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

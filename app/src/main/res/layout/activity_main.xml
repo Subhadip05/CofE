@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE9DD"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="scrollviewsize">
+
+        <EditText
+            android:id="@+id/Name_Field"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/Coffee_flavours"
+                    android:textColor="#6C332E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/price"
+                    android:textColor="#6C332E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/quantity"
+                    android:gravity="center_vertical"
+                    android:textColor="#6C332E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+
+            <!--            Started flavour choose interface-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/Whipped_Cream_Checkbox"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/whipped_cream"
+                    android:textStyle="bold"
+                    android:textColor="#BD6549"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/whipped_price"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/_100"
+                    android:textColor="#6C4408"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <!--                Quantity Horizontal Layout-->
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:onClick="whipDecrement"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#DD4237"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/decrement"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/whipped_Quantity_Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="8dp"
+                        android:text="@string/initial_Quantity_Value"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:onClick="whipIncrement"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#B8684E"
+                        android:gravity="center"
+                        android:text="@string/increment"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--            whipped cream end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/Chocolate_Checkbox"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/chocolate"
+                    android:textStyle="bold"
+                    android:textColor="#BD6549"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/chocolate_price"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/_50"
+                    android:textColor="#6C4408"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#DD4237"
+                        android:gravity="center"
+                        android:onClick="chocoDecrement"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/decrement"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/chocolate_Quantity_Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="8dp"
+                        android:text="@string/initial_Quantity_Value"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#B8684E"
+                        android:gravity="center"
+                        android:onClick="chocoIncrement"
+                        android:text="@string/increment"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--            chocolate part end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/Vanilla_Cream_CheckBox"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/vanilla"
+                    android:textStyle="bold"
+                    android:textColor="#BD6549"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vanilla_price"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/_100"
+                    android:textColor="#6C4408"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#DD4237"
+                        android:gravity="center"
+                        android:onClick="vDecrement"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/decrement"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/V_Quantity_Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="8dp"
+                        android:text="@string/initial_Quantity_Value"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#B8684E"
+                        android:gravity="center"
+                        android:onClick="vIncrement"
+                        android:text="@string/increment"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--            Vanilla cream end-->
+        </LinearLayout>
+        <!--        end of coffee flavour part-->
+
+        <Button
+            android:id="@+id/bookOrder"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#A37A40"
+            android:text="@string/Order"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+</ScrollView>
+

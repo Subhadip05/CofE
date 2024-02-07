@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="coffee_Quantity_Textview" type="id" />
+    <item name="coffee_Price_Textview" type="id" />
+</resources>
