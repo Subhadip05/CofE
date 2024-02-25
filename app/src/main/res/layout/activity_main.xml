@@ -19,6 +19,7 @@
             android:layout_height="60dp"
             android:hint="@string/name"
             android:inputType="text"
+            android:textColor="@color/black"
             android:minHeight="48dp"/>
 
         <LinearLayout

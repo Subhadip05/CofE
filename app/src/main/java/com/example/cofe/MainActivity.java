@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int whippedQuantity=0,chocolateQuantity=0,vanillaQuantity=0;
+    int whippedQuantity=1,chocolateQuantity=1,vanillaQuantity=1;
 
     TextView whipped_quantityTextView,whipped_priceTextView;
     TextView chocolate_quantityTextView,chocolate_priceTextView;
